@@ -9,7 +9,7 @@ int a = Convert.ToInt32(Console.ReadLine());
 int b = 1;
 if (a < 1)
 {
-    Console.WriteLine("Ввели не положительное число");
+    Console.WriteLine("Вы ввели не положительное число");
 }
 Console.WriteLine(Recurs(a, b));
 
@@ -21,9 +21,3 @@ int Recurs(int a, int b)
         Console.Write($"{Recurs(a, b + 1)}, ");
     return b;
 }
-
-// int InputInt(string output)
-// {
-//     Console.Write(output);
-//     return int.Parse(Console.ReadLine());
-// }
